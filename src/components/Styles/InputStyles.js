@@ -8,13 +8,17 @@ export const StyledInput = styled.input `
     padding:10px;
     padding-right:280px;
     border: 1px solid #351C38;
-    border-radius:8px;
+    border-radius:4px;
     ::placeholder {
         color:${otherColors.grey};
         &&&{
             padding-top:10px;
-        }
-        
+        }   
+    }
+
+    &&& {
+        outline: none;
+        color:${colors.white}
     }
 font-family:${typography.fontFamily};
 font-weight:${typography.fontWeight.heading2};
@@ -37,7 +41,7 @@ export const StyledDisabledInput = styled(StyledInput) `
 export const StyledLeftIconContainer = styled.div `
     display: flex;
     margin-bottom: 15px;
-    border-radius:8px;
+    border-radius:4px;
 `
 
 export const LeftIcon = styled.img `

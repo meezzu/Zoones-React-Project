@@ -1,20 +1,16 @@
 import React from 'react';
-import PlusIcon from '../Assets/plus-solid.svg'
-import { StyledButton, StyledLightDisabled, StyledGreyDisabled, PlusIconStyle } from '../Styles/ButtonStyles';
+import { StyledDefaultButton, StyledLightDisabled, StyledGreyDisabled} from '../Styles/ButtonStyles';
 
 
 const Button = ({onClick, children}) => {
     return (
-            <StyledButton onClick={onClick}>
-            <PlusIconStyle src={PlusIcon} alt='plus-icon' />
-                {children}
-                </StyledButton>  
+            <StyledDefaultButton onClick={onClick}>{children}</StyledDefaultButton>  
     )
 }
 
-export const ButtonLightDisabled = ({onClick}) => {
+export const ButtonLightDisabled = ({onClick, children}) => {
     return(
-        <StyledLightDisabled onClick={onClick}>Disabled</StyledLightDisabled>
+        <StyledLightDisabled onClick={onClick}>{children}</StyledLightDisabled>
     )
 };
 

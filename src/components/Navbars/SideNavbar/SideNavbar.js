@@ -1,12 +1,13 @@
 import React,{useState} from 'react';
 import Button from '../../Button/Button';
-import { PlusIconStyle} from '../../Styles/ButtonStyles'
+import { PlusIconStyle, StyledButton} from '../../Styles/ButtonStyles'
 import {Label, SideNavbarContainer} from '../../Styles/NavbarStyles'
 import UserIcon from '../../Assets/users-solid.svg';
 import ArrowDownIcon from '../../Assets/angle-down-solid.svg';
 import ArrowUpIcon from '../../Assets/angle-up-solid.svg';
 import CityIcon from '../../Assets/city-solid.svg';
 import SettingIcon from '../../Assets/cog-solid.svg';
+import PlusIcon from '../../Assets/plus-solid.svg'
 
 const SideNavbar = () => {
     const [showPeopleContent, setShowPeopleContent] = useState(false);
@@ -20,7 +21,10 @@ const SideNavbar = () => {
 
     return (
         <SideNavbarContainer>
-           <Button>Add New</Button>
+           <StyledButton>
+                <PlusIconStyle src={PlusIcon} alt='plus-icon' />
+                   Add New
+            </StyledButton>  
            <div style={{display:'flex', flexDirection:'row', alignItems:'center',gap:'20px'}}>
                <PlusIconStyle src={UserIcon} alt='' />
                <p style={{color:'#fff', fontSize:'16px'}}>My People</p>

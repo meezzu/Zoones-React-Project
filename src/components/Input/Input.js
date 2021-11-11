@@ -9,7 +9,7 @@ import {
     StyledRightIconInput 
 } from '../Styles/InputStyles';
 import SearchIcon from './../Assets/search-solid.svg';
-import {time} from './timezones';
+import {time} from '../../data';
 
 
 const Input = (props) => {
@@ -34,14 +34,14 @@ export const LeftIconInput = (props) => {
 }
 
 export const RightIconInput =({ value }) => {
-    const [timeState, setTimeState] = useState('24 hours');
+    const [timeState, setTimeState] = useState('');
 
     const handleSelectChange =(event) => {
         setTimeState(event.target.value);
     }
     return (
         <StyledRightIconContainer value={value} onChange={handleSelectChange}>
-            <StyledRightIconInput value={timeState} defaultChecked>24 hours</StyledRightIconInput>
+            <StyledRightIconInput value={timeState} defaultChecked>6 hours</StyledRightIconInput>
             {time.map((timeZone, index) => (
                 <StyledRightIconInput value={timeZone} key={index} >
                     {timeZone}

@@ -4,7 +4,7 @@ import Zoones from './../../Assets/Logo 1.svg';
 import { LeftIconInput, RightIconInput } from '../../Input/Input';
 import BackwardIcon from './../../Assets/angle-left-solid.svg';
 import ForwardIcon from './../../Assets/angle-right-solid.svg';
-import { days } from '../../Input/timezones';
+import { days } from '../../../data';
 import { LeftIcon, RightIcon } from '../../Styles/InputStyles';
 
 const TopNavbar = () => {

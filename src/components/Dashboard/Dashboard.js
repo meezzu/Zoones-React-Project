@@ -1,5 +1,6 @@
 import React from 'react';
 import Input, { LeftIconInput, RightIconInput } from '../Input/Input';
+import { Tab } from '../Tabs/Tabs.stories';
 
 const Dashboard = () => {
     return (
@@ -13,6 +14,7 @@ const Dashboard = () => {
             placeholder='placeholder'
             />
             <RightIconInput />
+            <Tab />
         </>
     )
 }

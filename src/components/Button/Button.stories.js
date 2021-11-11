@@ -15,7 +15,13 @@ export const Default = () => {
     )
 }
 
-export const LightDisabled = () => <ButtonLightDisabled onClick={action('Button was clicked')} />
+export const LightDisabled = () => {
+    const lightDisabledTitle = text('LightDisabledTitle', 'Disabled');
+    return (
+        <ButtonLightDisabled onClick={action('Button was clicked')}>{lightDisabledTitle}</ButtonLightDisabled>
+    );
+}
+
 export const GreyDisabled = () => <ButtonGreyDisabled onClick={action('Button was clicked')} />
 
 
