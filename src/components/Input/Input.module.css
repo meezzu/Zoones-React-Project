@@ -1,0 +1,18 @@
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+    background-image: url('../Assets//selectDropdownArrow.svg');   /* Add custom arrow */
+    background:#351C38;
+    color:#fff;
+    border-radius:8px;
+    width:106px;
+    padding:12px 16px 12px 16px;
+    border: 1px solid #351C38;
+    margin-top:10px;
+    outline:none;
+    font-family: Apercu Pro;
+    font-size: 17px;
+    line-height :14px;
+    font-weight: 500;
+ }

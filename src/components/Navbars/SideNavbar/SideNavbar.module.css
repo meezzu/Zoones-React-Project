@@ -1,0 +1,36 @@
+.title, label {
+    font-family: Apercu Pro;
+    font-size: 17px;
+    line-height: 14px;
+    color:#fff;
+    font-weight: 500;
+}
+
+.peopleContainer {
+    display:flex;
+    flex-direction:row; 
+    align-items:center;
+    gap:20px;
+    width: auto;
+    margin-right: 62px;
+    margin-bottom: 16px;
+}
+
+.citiesContainer {
+    display:flex;
+    flex-direction:row; 
+    align-items:center;
+    gap:25px;
+    margin-right: 62px;
+}
+
+.footerContainer {
+    display:flex;
+    flex-direction:row; 
+    align-items:center;
+    gap:20px;
+    padding-right:120px; 
+    padding-top:350px;
+    position: fixed;
+    bottom:40px
+}

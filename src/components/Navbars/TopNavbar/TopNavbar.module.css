@@ -1,0 +1,17 @@
+.leftIcon {
+    margin-top:20px;
+    background:#351C38;
+    width: 40px;
+    height: 38px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.rightIcon {
+    margin-top: 20px;
+    width: 40px;
+    height: 38px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background:#351C38;
+}
